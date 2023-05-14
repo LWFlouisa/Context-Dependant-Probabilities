@@ -1,4 +1,5 @@
 ## Option 1
+~~~ruby
 class GameOfLife
   def initialize(width, height)
     @width = width
@@ -42,8 +43,10 @@ class GameOfLife
     @grid.map { |row| row.map { |cell| cell == 1 ? 'o' : '.' }.join }.join("\n")
   end
 end
+~~~
 
 ## Option 2
+~~~ruby
 require 'matrix'
 
 class GameOfLife
@@ -86,3 +89,4 @@ class GameOfLife
     @grid.to_a.map { |row| row.map { |cell| cell == 1 ? 'o' : '.' }.join }.join("\n")
   end
 end
+~~~
